@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <nav class="menu">
+            <ul class="menu__main">
+              <li class="menu__item menu__item--logo"><a href="#">My Movie</a></li>
+              <li class="menu__item menu__item--link"><a href="./index.html">Inicio</a></li>
+              <li class="menu__item menu__item--link"><a href="./registration.html">Registro</a></li>
+            </ul>
+          </nav>
+          
+    </div>
+    <section>
+        <div class="carousel__container">
+            <div class="carousel fade">
+              <img src="img/carrusel/popcorn.jpg" style="width:100%">
+            </div>
+            <div class="carousel fade">
+              <img src="img/carrusel/demonstration.jpg" style="width:100%">
+            </div>
+            <div class="carousel fade">
+              <img src="img/carrusel/girls.jpg" style="width:100%">
+            </div>
+            <div class="carousel fade">
+              <img src="img/carrusel/movie-theater.jpg" style="width:100%">
+            </div>
+            <div class="carousel__controls">
+              <div class="carousel__control carousel__control--left" onclick="plusSlides(-1)">&#10094;</div>
+              <div class="carousel__control carousel__control--rigth" onclick="plusSlides(1)">&#10095;</div>
+            </div>
+          </div>
+          <div  class="carousel__indicators">
+            <span class="carousel__indicator" onclick="currentSlide(1)"></span> 
+            <span class="carousel__indicator" onclick="currentSlide(2)"></span> 
+            <span class="carousel__indicator" onclick="currentSlide(3)"></span> 
+            <span class="carousel__indicator" onclick="currentSlide(4)"></span> 
+          </div>
+    </section>
+    <section>
+        <h2 class="sub__title">Peliculas</h2>
+        <div class="container" id="container"> 
+            <div class="row" id="cardItem"><!---->
+            </div> 
+        </div>
+        <div id="modalContainer" class="modal">
+          <div class="content__modal" id="content__modal">
+           
+          </div>
+        </div>
+
+    </section>
+    <script src="js/carousel.js"></script>
+    <script src="js/app.js" type="module"></script>
+    <script src="data/data.js" type="module"></script>
+</body>
+</html>
